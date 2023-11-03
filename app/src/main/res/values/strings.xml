@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">UTSApp</string>
+    <string name="app_Title">Catatan Pengeluaran</string>
+    <string name="user_Name">Zein Nur Ichsan</string>
+    <string name="hasil">0000</string>
+    <string name="jenis_pengeluaran">Jenis pengeluaran</string>
+
+</resources>

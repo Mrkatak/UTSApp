@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:orientation="vertical"
+        android:background="@color/color_bg"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_Title"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:textColor="@color/Blue"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tv_Username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_Name"
+            android:textStyle="normal"
+            android:textSize="16sp"
+            android:textColor="@color/Gray"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_container"
+            android:padding="24dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="Total Uang Qu"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:textColor="@color/white"
+                    android:text="Rp "/>
+
+                <TextView
+                    android:id="@+id/tv_uangku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:textColor="@color/white"
+                    android:text="2000"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih Opsi"
+            android:textColor="@color/Gray"
+            android:layout_marginTop="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_container_lblue">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/primer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengeluaran Primer"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/Gray"/>
+            <RadioButton
+                android:id="@+id/sekunder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengeluaran Sekunder"
+                android:textColor="@color/Gray"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_container_lblue">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:textSize="14sp"
+                android:text="Masukkan jumlah pengeluaran :" />
+
+            <EditText
+                android:id="@+id/et_Inputpengeluaran"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="1.000.000"
+                android:textColorHint="#80729F"
+                android:inputType="number"
+                android:textColor="@color/Gray"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/bg_container"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="Simpan"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_container_lblue">
+
+            <TextView
+                android:id="@+id/tvJenis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:textSize="14sp"
+                android:text="@string/jenis_pengeluaran" />
+
+            <TextView
+                android:id="@+id/tv_hasil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Gray"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:text="@string/hasil"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
